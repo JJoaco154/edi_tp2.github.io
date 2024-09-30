@@ -1,0 +1,267 @@
+/*{ 
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata", monospace;
+    font-size: large;
+}
+
+#titulo{
+    top: 15px;
+    color: green;
+}
+
+h2{
+    text-align: center;
+    background-color: black;
+    color: green;
+}
+
+#header {
+    background-color: black;
+    display: flex;
+    align-items: auto;
+    justify-content: center;
+
+}
+
+.contenedor{
+    display: flex;
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.img, a{
+    height: 400x;
+    width: 350px;
+    flex-shrink: 0;
+}
+.img:hover {
+    width: 400px;
+    transition: .4s;
+}
+
+
+
+.caja-info{
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+#texto-html{
+    background-color:#f16524;
+    display: flex;
+    
+}
+#texto-html:hover {
+    background-color: #e54c21;
+    font-size: 19px;
+    transition: .4s;
+ 
+}
+#codigo-html{
+    height: 125px;
+    width: 125px;
+    margin: 20px;
+}
+#codigo-html:hover{
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    transition: .6s;
+    }
+
+
+
+#texto-css{
+    background-color: #2a65f1;
+}
+#texto-css:hover {
+    background-color: #264de6;
+}
+
+#texto-java{
+    color: black;
+    background-color: #f3bb25;
+    
+}
+#texto-java:hover {
+    background-color: #e4a424;
+}
+
+h3{
+    color: green;
+}
+
+.nosotros p{
+    color: green;
+}
+
+.nosotros{
+    background-color: black;
+    text-align: center;
+}*/
+
+body{
+      background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata", monospace;
+    font-size: large;
+    
+}
+
+#titulo {
+    top: 15px;
+    color: green;
+    width: 100%;
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+    background-color: black;
+    color: green;
+    padding: 10px;
+    width: 100%;
+}
+
+#header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.img {
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    transition: width 0.4s;
+}
+
+.img:hover {
+    width: 400px;
+}
+
+.caja-info {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+#texto-html, #texto-css, #texto-java {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#texto-html {
+    background-color: #f16524;
+    border-radius: 15px;
+}
+
+#texto-html:hover {
+    background-color: #e54c21;
+}
+
+#texto-css {
+    background-color: #2a65f1;
+    border-radius: 15px;
+}
+
+#texto-css:hover {
+    background-color: #264de6;
+}
+
+#texto-java {
+    background-color: #f3bb25;
+    border-radius: 15px;
+}
+
+#texto-java:hover {
+    background-color: #e4a424;
+}
+
+h3 {
+    color: green;
+}
+
+.nosotros p {
+    color: green;
+}
+
+.nosotros {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 1.5em;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .caja-info {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 1.2em;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    h2 {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .caja-info {
+        padding: 5px;
+    }
+}
